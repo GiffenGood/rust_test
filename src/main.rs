@@ -9,8 +9,9 @@ fn main() {
 }
 
 fn forTest(){
-    for x in 1..10{
-        if (x % 2) == 0 { continue;}
+    let v = vec![1,2,3,4,5,6];
+    for x in &v {
+        if (x % 2) != 0 { continue;}
         println!("x {}",x);
     }
 }
